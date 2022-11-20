@@ -34,7 +34,7 @@ exports.createUserController = async(req,res)=>{
 }
 
 // get user 
-exports.getUsersController = async ()=>{
+exports.getUsersController = async (req, res)=>{
     try{
         const users = await User.find();
         res.json({
